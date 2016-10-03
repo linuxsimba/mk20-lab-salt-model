@@ -12,15 +12,15 @@ parameters:
           source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/9.0 mos9.0 main restricted"
           architectures: amd64
           key_url: "http://mirror.fuel-infra.org/mos-repos/ubuntu/9.0/archive-mos9.0.key"
-					pin:
+          pin:
           	- pin: 'origin "mirror.fuel-infra.org"'
             	priority: 900
             	package: '*'
-#
+
         mirantis_updates:
           source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/9.0/ mos9.0-updates main restricted"
           architectures: amd64
-					pin:
+          pin:
           	- pin: 'origin "mirror.fuel-infra.org"'
             	priority: 900
             	package: '*'
@@ -28,7 +28,7 @@ parameters:
         mirantis_security:
           source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/9.0/ mos9.0-security main restricted"
           architecture: amd64
-					pin:
+          pin:
           	- pin: 'origin "mirror.fuel-infra.org"'
             	priority: 900
             	package: '*'
