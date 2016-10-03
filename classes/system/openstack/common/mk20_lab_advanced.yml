@@ -6,24 +6,24 @@ parameters:
           address: ${_param:cluster_node01_address}
           names:
           - ${_param:cluster_node01_hostname}
-          - ${_param:cluster_node01_hostname}.mk20-lab-advanced.local
+          - ${_param:cluster_node01_hostname}.vagrant.vm
         ctl02:
           address: ${_param:cluster_node02_address}
           names:
           - ${_param:cluster_node02_hostname}
-          - ${_param:cluster_node02_hostname}.mk20-lab-advanced.local
+          - ${_param:cluster_node02_hostname}.vagrant.vm
         ctl03:
           address: ${_param:cluster_node03_address}
           names:
           - ${_param:cluster_node03_hostname}
-          - ${_param:cluster_node03_hostname}.mk20-lab-advanced.local
-        cmp01:
-          address: 172.16.10.105
+          - ${_param:cluster_node03_hostname}.vagrant.vm
+        cpt01:
+          address:  192.168.200.105
           names:
-          - cmp01
-          - cmp01.mk20-lab-advanced.local
-        mon01:
-          address: 172.16.10.107
+          - cpt01
+          - cpt01.vagrant.vm
+        cpt02:
+          address:  192.168.200.106
           names:
-          - mon01
-          - mon01.mk20-lab-advanced.local
+          - cpt02
+          - cpt02.vagrant.vm
