@@ -16,14 +16,14 @@ parameters:
   _param:
     reclass_data_repository: "https://github.com/linuxsimba/mk20-lab-salt-model.git"
     reclass_data_revision: master
-    reclass_config_master: 192.168.200.7
-    single_address: 192.168.200.7
+    reclass_config_master: 192.168.200.107
+    single_address: 192.168.200.107
     salt_master_host: 127.0.0.1
     salt_master_base_environment: prd
     salt_minion_ca_host: cfg01.vagrant.vm
     rabbitmq_monitor_password: password
-    sensu_message_queue_host: 192.168.200.4
-    collectd_backend_carbon_host: 192.168.200.4
+    sensu_message_queue_host: 192.168.200.104
+    collectd_backend_carbon_host: 192.168.200.104
     collectd_backend_carbon_port: 2013
   linux:
     system:
