@@ -38,8 +38,9 @@ parameters:
           architectures: amd64
           default: true
           key_url: "http://apt.tcpcloud.eu/public.gpg"
-# Not sure what this does.
-#  _param:
-#    heka_amqp_host: 172.16.10.110
-#    heka_amqp_password: workshop
-#    heka_elasticsearch_host: 172.16.10.110
+# Apparently without this stuff breaks.. so I'm just putting a nonexistent IP on the
+# vlan defined for control/storage/admin.
+  _param:
+    heka_amqp_host: 192.168.200.112
+    heka_amqp_password: workshop
+    heka_elasticsearch_host: 192.168.200.112
