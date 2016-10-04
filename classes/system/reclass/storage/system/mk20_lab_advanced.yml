@@ -55,7 +55,7 @@ parameters:
           name: cpt01
           domain: vagrant.vm
           classes:
-            - system.linux.system.single
+            - system.linux.system.compute
             - system.openstack.compute.mk20_lab
             - system.openstack.common.mk20_lab_advanced
           params:
@@ -69,7 +69,7 @@ parameters:
           name: cpt02
           domain: vagrant.vm
           classes:
-            - system.linux.system.single
+            - system.linux.system.compute
             - system.openstack.compute.mk20_lab
             - system.openstack.common.mk20_lab_advanced
           params:
