@@ -4,7 +4,7 @@ parameters:
   linux:
     network:
       interface:
-        eth0:
+        eth1:
           enabled: true
           type: eth
           proto: manual
