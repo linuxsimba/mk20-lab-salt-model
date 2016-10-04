@@ -3,7 +3,7 @@ classes:
 - system.opencontrail.compute.cluster
 - system.openstack.common.mk20_lab
 #- service.ceilometer.agent.cluster
-#- service.ceilometer.agent.publisher.graphite
+- service.ceilometer.agent.publisher.graphite
 parameters:
   linux:
     system:
