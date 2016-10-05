@@ -1,6 +1,7 @@
 parameters:
   linux:
     storage:
+      enabled: true
       lvm:
         cinder-volume:
           enabled: true
