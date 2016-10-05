@@ -1,10 +1,10 @@
 parameters:
   linux:
     storage:
-      enabled: true
+      enabled: True
       lvm:
         cinder-volume:
-          enabled: true
+          enabled: True
           devices:
             - /dev/vdb
           volume:
