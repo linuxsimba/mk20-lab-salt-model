@@ -32,12 +32,12 @@ parameters:
       timezone: 'US/Pacific'
       name: cfg01
       domain: vagrant.vm
-    salt:
-      environment:
-        prd:
-          formula:
-            linux:
-              source: git
-              address: https://github.com/linuxsimba/salt-formula-linux.git
-              branch: ${_param:mirantis_version}
+  salt:
+    environment:
+      prd:
+        formula:
+          linux:
+            source: git
+            address: https://github.com/linuxsimba/salt-formula-linux.git
+            branch: ${_param:mirantis_version}
 
