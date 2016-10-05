@@ -4,8 +4,10 @@ parameters:
   cinder:
     controller:
       enabled: false
-    backend:
-      lvmdriver-1:
-        engine: lvm
-        type_name: lvmdriver-1
-        volume_group: cinder-volume
+    volume:
+      enabled: true
+      backend:
+        lvmdriver-1:
+          engine: lvm
+          type_name: lvmdriver-1
+          volume_group: cinder-volume
