@@ -7,6 +7,7 @@ parameters:
       default_volume_type: lvmdriver-1
     volume:
       enabled: true
+      default_volume_type: lvmdriver-1
       backend:
         lvmdriver-1:
           engine: lvm
