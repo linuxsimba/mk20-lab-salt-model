@@ -1,0 +1,11 @@
+parameters:
+  linux:
+    storage:
+      lvm:
+        cinder-volume:
+          enabled: true
+          devices:
+            - /dev/vdb
+          volume:
+            data:
+              size: 40G
