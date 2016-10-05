@@ -58,6 +58,7 @@ parameters:
             - system.linux.system.compute
             - system.openstack.compute.mk20_lab
             - system.openstack.common.mk20_lab_advanced
+            - system.cinder.volume.single
           params:
             salt_master_host: ${_param:reclass_config_master}
             single_address: 192.168.200.105
@@ -72,6 +73,7 @@ parameters:
             - system.linux.system.compute
             - system.openstack.compute.mk20_lab
             - system.openstack.common.mk20_lab_advanced
+            - system.cinder.volume.single
           params:
             salt_master_host: ${_param:reclass_config_master}
             single_address: 192.168.200.106
