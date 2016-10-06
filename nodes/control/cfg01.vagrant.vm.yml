@@ -43,6 +43,13 @@ parameters:
               branch: ${_param:mirantis_version}
             keystone:
               source: git
-              address: http://github.com/tcpcloud/salt-formula-keystone
+              address: http://github.com/openstack/salt-formula-keystone
               revision: master
-
+            git:
+              source: git
+              address: https://github.com/tcpcloud/salt-formula-git
+              revision: master
+            reclass:
+              source: git
+              address: https://github.com/tcpcloud/salt-formula-reclass
+              revision: master
