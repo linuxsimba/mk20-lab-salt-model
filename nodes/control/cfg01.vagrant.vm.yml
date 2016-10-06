@@ -53,3 +53,7 @@ parameters:
               source: git
               address: https://github.com/tcpcloud/salt-formula-reclass
               revision: master
+            ntp:
+              source: git
+              address: https://github.com/tcpcloud/salt-formula-ntp
+              revision: master
