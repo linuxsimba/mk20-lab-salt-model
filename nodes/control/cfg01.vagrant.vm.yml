@@ -41,4 +41,8 @@ parameters:
               source: git
               address: https://github.com/linuxsimba/salt-formula-linux.git
               branch: ${_param:mirantis_version}
+            keystone:
+              source: git
+              address: http://github.com/tcpcloud/salt-formula-keystone
+              revision: master
 
