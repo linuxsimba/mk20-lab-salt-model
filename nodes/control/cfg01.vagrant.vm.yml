@@ -27,11 +27,22 @@ parameters:
     collectd_backend_carbon_port: 2013
     # Can be mos8, mos9
     mirantis_version: mos8
+  ntp:
+    client:
+      strata:
+        - 0.us.pool.ntp.org
+        - 1.us.pool.ntp.org
   linux:
     system:
       timezone: 'US/Pacific'
       name: cfg01
       domain: vagrant.vm
+      repo:
+        tcpcloud:
+          source: "deb [arch=amd64] http://apt.tcpcloud.eu/nightly/ trusty main security extra tcp tcp-salt liberty"
+  # Created git repos of formulas I changed so that MOS8 packages can work
+  # Some of these patches will be eventually submitted upstream. Others
+  # will be begin obsolete when tcpcloud stuff gets better support
   salt:
     master:
       environment:
@@ -41,23 +52,19 @@ parameters:
               source: git
               address: https://github.com/linuxsimba/salt-formula-linux.git
               branch: ${_param:mirantis_version}
-            keystone:
+            nova:
               source: git
-              address: http://github.com/openstack/salt-formula-keystone
-              revision: master
-            git:
+              address: https://github.com/linuxsimba/salt-formula-nova.git
+              branch: ${_param:mirantis_version}
+            cinder:
               source: git
-              address: https://github.com/tcpcloud/salt-formula-git
-              revision: master
-            reclass:
-              source: git
-              address: https://github.com/tcpcloud/salt-formula-reclass
-              revision: master
-            ntp:
-              source: git
-              address: https://github.com/tcpcloud/salt-formula-ntp
-              revision: master
+              address: https://github.com/linuxsimba/salt-formula-cinder.git
+              branch: ${_param:mirantis_version}
             salt:
               source: git
-              address: https://github.com/tcpcloud/salt-formula-salt
+              address: https://github.com/linuxsimba/salt-formula-salt.git
               revision: master
+            neutron:
+              source: git
+              address: https://github.com/linuxsimba/salt-formula-neutron.git
+              branch: ${_param:mirantis_version}
