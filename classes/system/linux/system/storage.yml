@@ -1,12 +1,12 @@
-parameters:
-  linux:
-    storage:
-      enabled: True
-      lvm:
-        cinder-volume:
-          enabled: True
-          devices:
-            - /dev/vdb
-          volume:
-            data:
-              size: 40G
+#parameters:
+#  linux:
+#    storage:
+#      enabled: True
+#      lvm:
+#        cinder-volume:
+#          enabled: True
+#          devices:
+#            - /dev/vdb
+#          volume:
+#            data:
+#              size: 40G

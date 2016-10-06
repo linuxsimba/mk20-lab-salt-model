@@ -5,6 +5,8 @@ classes:
 #  - system.openssh.server.single
 parameters:
   linux:
+    storage:
+      enabled: False
     system:
       timezone: 'US/Pacific'
       repo:
