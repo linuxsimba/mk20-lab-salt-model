@@ -5,7 +5,8 @@ classes:
 - service.memcached.server.single
 - service.rabbitmq.server.cluster
 - system.keystone.server.cluster
-- system.keystone.server.service.keystone
+# Disable Keystone v2 support. only run v3
+#- system.keystone.server.service.keystone
 - system.keystone.server.service.keystone3
 #- system.keystone.server.service.ceilometer
 - system.keystone.server.service.glance
