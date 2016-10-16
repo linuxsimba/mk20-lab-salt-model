@@ -37,9 +37,6 @@ parameters:
       timezone: 'US/Pacific'
       name: cfg01
       domain: vagrant.vm
-      repo:
-        tcpcloud:
-          source: "deb [arch=amd64] http://apt.tcpcloud.eu/nightly/ trusty main security extra tcp tcp-salt liberty"
   # Created git repos of formulas I changed so that MOS8 packages can work
   # Some of these patches will be eventually submitted upstream. Others
   # will be begin obsolete when tcpcloud stuff gets better support
