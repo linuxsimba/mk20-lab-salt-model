@@ -17,7 +17,7 @@ parameters:
             port: 443
             protocol: https
           ssl:
-            enabled: true
+            enabled: false
             authority: mk20_lab_ca
             engine: salt
             mode: secure
