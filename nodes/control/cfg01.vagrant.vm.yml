@@ -11,7 +11,7 @@ classes:
 # - system.salt.minion.pki.authority
 # - system.salt.minion.pki.certificate
 #- system.sphinx.server.doc.reclass
-  #- system.openstack.common.mk20_lab_advanced
+- system.openstack.common.mk20_lab_advanced
 parameters:
   _param:
     reclass_data_repository: "https://github.com/linuxsimba/mk20-lab-salt-model.git"
@@ -65,3 +65,7 @@ parameters:
               source: git
               address: https://github.com/linuxsimba/salt-formula-neutron.git
               branch: ${_param:mirantis_version}
+            horizon:
+              source: git
+              address: https://github.com/openstack/salt-formula-horizon.git
+              branch: master
