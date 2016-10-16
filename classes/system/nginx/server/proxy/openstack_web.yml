@@ -16,8 +16,8 @@ parameters:
             name: ${_param:cluster_public_host}
             port: 443
             protocol: https
-          ssl:
-            enabled: false
-            authority: mk20_lab_ca
-            engine: salt
-            mode: secure
+        # ssl:
+            #            enabled: false
+            # authority: mk20_lab_ca
+            #engine: salt
+            #mode: secure
