@@ -11,6 +11,7 @@ classes:
   # - system.salt.minion.pki.authority
   # - system.salt.minion.pki.certificate
   # - system.sphinx.server.doc.reclass
+  - system.openstack.common.mk20_lab
   - system.openstack.common.mk20_lab_advanced
 parameters:
   _param:
