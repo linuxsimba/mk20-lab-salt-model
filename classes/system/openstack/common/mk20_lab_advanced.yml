@@ -1,3 +1,4 @@
+# These parameters go into /etc/hosts
 parameters:
   linux:
     network:

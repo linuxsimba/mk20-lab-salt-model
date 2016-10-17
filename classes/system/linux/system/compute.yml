@@ -4,7 +4,7 @@ parameters:
   linux:
     network:
       interface:
-        eth1:
+        eth2:
           enabled: true
           type: eth
           proto: manual
@@ -21,4 +21,4 @@ parameters:
           pre_up_cmds:
           - /usr/lib/contrail/if-vhost0
           use_interfaces:
-          - eth1
+          - eth2

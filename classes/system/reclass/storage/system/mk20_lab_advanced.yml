@@ -3,6 +3,16 @@ parameters:
   reclass:
     storage:
       node:
+        web01.vagrant.vm:
+          name: web01
+          domain: vagrant.vm
+          classes:
+            - system.linux.system.single
+            - system.openstack.common.mk20_lab_advanced
+            - system.openstack.proxy.mk20_lab_advanced
+          params:
+            salt_master_host: ${_param:reclass_config_master}
+            single_address: 192.168.200.109
         ctl01.vagrant.vm:
           name: ctl01
           domain: vagrant.vm
@@ -64,9 +74,9 @@ parameters:
           params:
             salt_master_host: ${_param:reclass_config_master}
             single_address: 192.168.200.105
-            opencontrail_compute_address: 192.168.200.105
-            opencontrail_compute_gateway: 192.168.200.1
-            opencontrail_compute_iface: eth1
+            opencontrail_compute_address: 192.168.210.105
+            opencontrail_compute_gateway: 192.168.210.1
+            opencontrail_compute_iface: eth2
 
         cpt02.vagrant.vm:
           name: cpt02
@@ -80,6 +90,6 @@ parameters:
           params:
             salt_master_host: ${_param:reclass_config_master}
             single_address: 192.168.200.106
-            opencontrail_compute_address: 192.168.200.106
-            opencontrail_compute_gateway: 192.168.200.1
-            opencontrail_compute_iface: eth1
+            opencontrail_compute_address: 192.168.210.106
+            opencontrail_compute_gateway: 192.168.210.1
+            opencontrail_compute_iface: eth2
