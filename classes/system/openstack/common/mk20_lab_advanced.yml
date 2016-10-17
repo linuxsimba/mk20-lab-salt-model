@@ -26,5 +26,13 @@ parameters:
         cpt02:
           address:  192.168.200.106
           names:
-          - cpt02
-          - cpt02.vagrant.vm
+            - cpt02
+            - cpt02.vagrant.vm
+         web01:
+           names:
+             - web01
+             - web01.vagrant.vm
+           address: 192.168.200.109
+
+
+
