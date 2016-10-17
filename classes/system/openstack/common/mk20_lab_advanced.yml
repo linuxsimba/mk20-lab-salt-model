@@ -6,33 +6,30 @@ parameters:
         ctl01:
           address: ${_param:cluster_node01_address}
           names:
-          - ${_param:cluster_node01_hostname}
+            - ${_param:cluster_node01_hostname}
           - ${_param:cluster_node01_hostname}.vagrant.vm
         ctl02:
           address: ${_param:cluster_node02_address}
           names:
-          - ${_param:cluster_node02_hostname}
+            - ${_param:cluster_node02_hostname}
           - ${_param:cluster_node02_hostname}.vagrant.vm
         ctl03:
           address: ${_param:cluster_node03_address}
           names:
-          - ${_param:cluster_node03_hostname}
+            - ${_param:cluster_node03_hostname}
           - ${_param:cluster_node03_hostname}.vagrant.vm
         cpt01:
           address:  192.168.200.105
           names:
-          - cpt01
+            - cpt01
           - cpt01.vagrant.vm
         cpt02:
           address:  192.168.200.106
           names:
             - cpt02
             - cpt02.vagrant.vm
-         web01:
-           names:
-             - web01
-             - web01.vagrant.vm
-           address: 192.168.200.109
-
-
-
+        web01:
+          names:
+            - web01
+            - web01.vagrant.vm
+          address: 192.168.200.109
