@@ -6,7 +6,7 @@ parameters:
       branding: "Mk20 Lab Dashboard"
       bind:
         address: 127.0.0.1
-        port: 80
+        port: 8078
       plugin:
         horizon_theme:
           theme_name: tcp
