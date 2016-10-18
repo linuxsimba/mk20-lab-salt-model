@@ -43,11 +43,6 @@ parameters:
               priority: 900
               package: '*'
 
-        tcpcloud:
-          source: "deb [arch=amd64] http://apt.tcpcloud.eu/nightly/ trusty main security extra tcp"
-          architectures: amd64
-          default: true
-          key_url: "http://apt.tcpcloud.eu/public.gpg"
 # Apparently without this stuff breaks.. so I'm just putting a nonexistent IP on the
 # vlan defined for control/storage/admin.
   _param:
