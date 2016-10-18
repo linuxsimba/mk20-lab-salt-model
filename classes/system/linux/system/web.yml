@@ -1,0 +1,56 @@
+classes:
+  - service.linux.system
+  - service.ntp.client
+  - service.salt.minion.master
+#  - system.openssh.server.single
+parameters:
+  linux:
+    storage:
+      enabled: False
+    system:
+      timezone: 'US/Pacific'
+      repo:
+        tcpcloud:
+          source: "deb [arch=amd64] http://apt.tcpcloud.eu/nightly/ trusty main security extra tcp tcp-salt liberty"
+        ubuntu-trusty:
+          source: "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates main restricted"
+          architecture: amd64
+        ubuntu-main:
+          source: "deb http://us.archive.ubuntu.com/ubuntu/ trusty  main restricted"
+          architecture: amd64
+        mirantis_main:
+          source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/8.0 mos8.0 main restricted"
+          architectures: amd64
+          key_url: "http://mirror.fuel-infra.org/mos-repos/ubuntu/8.0/archive-mos8.0.key"
+          pin:
+            - pin: 'origin "mirror.fuel-infra.org"'
+              priority: 900
+              package: '*'
+
+        mirantis_updates:
+          source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/8.0/ mos8.0-updates main restricted"
+          architectures: amd64
+          pin:
+            - pin: 'origin "mirror.fuel-infra.org"'
+              priority: 900
+              package: '*'
+
+        mirantis_security:
+          source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/8.0/ mos8.0-security main restricted"
+          architecture: amd64
+          pin:
+            - pin: 'origin "mirror.fuel-infra.org"'
+              priority: 900
+              package: '*'
+
+        tcpcloud:
+          source: "deb [arch=amd64] http://apt.tcpcloud.eu/nightly/ trusty main security extra tcp"
+          architectures: amd64
+          default: true
+          key_url: "http://apt.tcpcloud.eu/public.gpg"
+# Apparently without this stuff breaks.. so I'm just putting a nonexistent IP on the
+# vlan defined for control/storage/admin.
+  _param:
+    heka_amqp_host: 192.168.200.112
+    heka_amqp_password: workshop
+    heka_elasticsearch_host: 192.168.200.112
