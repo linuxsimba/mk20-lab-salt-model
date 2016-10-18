@@ -23,10 +23,10 @@ classes:
 - system.openstack.common.mk20_lab
 parameters:
   linux:
-    package:
-      python-kafka:
-        version: '1.0.1-0contrail1'
     system:
+      package:
+        python-kafka:
+          version: '1.0.1-0contrail1'
       repo:
         tcpcloud_opencontrail:
           source: "deb [arch=amd64] http://apt.tcpcloud.eu/nightly/ trusty oc30"
