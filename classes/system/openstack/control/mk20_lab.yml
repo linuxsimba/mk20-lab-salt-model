@@ -23,6 +23,9 @@ classes:
 - system.openstack.common.mk20_lab
 parameters:
   linux:
+    package:
+      python-kafka:
+        version: '1.0.1-0contrail1'
     system:
       repo:
         tcpcloud_opencontrail:
