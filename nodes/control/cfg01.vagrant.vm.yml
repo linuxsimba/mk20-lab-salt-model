@@ -73,4 +73,4 @@ parameters:
             opencontrail:
               source: git
               address: https://github.com/linuxsimba/salt-formula-opencontrail.git
-              branch: master
+              branch: mos8
