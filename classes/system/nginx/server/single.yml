@@ -8,13 +8,8 @@ parameters:
         heka:
           enabled: true
     site:
-      web01.vagrant.vm:
-        enabled: true
-        type: gitlab
-        name: domain
-        ssl:
-          enabled: true
-          key: |
+      ssl:
+        key: |
             -----BEGIN ENCRYPTED PRIVATE KEY-----
             MIIFDjBABgkqhkiG9w0BBQ0wMzAbBgkqhkiG9w0BBQwwDgQIZbWs+RHsRZoCAggA
             MBQGCCqGSIb3DQMHBAglyr/ObqUh4wSCBMi68LTQcA4/CHgmCbu9zw0YyJKUp2oO
