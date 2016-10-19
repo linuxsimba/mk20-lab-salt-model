@@ -17,6 +17,6 @@ parameters:
             protocol: https
           ssl:
             enabled: true
-            authority: mk20_lab_ca
+            authority: vagrant_mk20_ca
             engine: salt
             mode: secure

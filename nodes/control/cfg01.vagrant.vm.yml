@@ -6,10 +6,10 @@ classes:
   - system.reclass.storage.salt
   - system.reclass.storage.system.mk20_lab_advanced
   # - system.openstack.proxy.mk20_lab_advanced
-  # Not sure what these 2 are for. but it causes a failure of
-  # salt-call state.sls salt-minions on the saltmaster.
-  # - system.salt.minion.pki.authority
-  # - system.salt.minion.pki.certificate
+  # Creates CA and server certs for the environment.
+  # Used by salt and nginx
+  - system.salt.minion.pki.authority
+  - system.salt.minion.pki.certificate
   # - system.sphinx.server.doc.reclass
   - system.openstack.common.mk20_lab
   - system.openstack.common.mk20_lab_advanced

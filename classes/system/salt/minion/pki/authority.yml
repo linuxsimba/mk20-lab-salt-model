@@ -2,10 +2,10 @@ parameters:
   salt:
     minion:
       ca:
-        mk20_lab_ca:
-          common_name: mk20_lab_ca
-          country: cz
-          locality: Prague
+        vagrant_mk20_ca:
+          common_name: vagrant_mk20_ca
+          country: US
+          locality: Durham
           organization: Mirantis
           signing_policy:
             cert_server:
