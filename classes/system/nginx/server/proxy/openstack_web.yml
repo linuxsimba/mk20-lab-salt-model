@@ -1,3 +1,4 @@
+---
 parameters:
   nginx:
     server:
@@ -16,8 +17,8 @@ parameters:
             name: ${_param:cluster_public_host}
             port: 443
             protocol: https
-         ssl:
-           enabled: true
-           authority: vagrant_mk20_ca
-           engine: salt
-           mode: secure
+          ssl:
+            enabled: true
+            authority: vagrant_mk20_ca
+            engine: salt
+            mode: secure
