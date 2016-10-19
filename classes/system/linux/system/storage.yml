@@ -8,6 +8,3 @@ parameters:
           enabled: True
           devices:
             - /dev/vdb
-          volume:
-            data:
-              size: 40G
