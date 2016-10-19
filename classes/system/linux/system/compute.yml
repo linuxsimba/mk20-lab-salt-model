@@ -9,9 +9,9 @@ parameters:
           type: eth
           proto: manual
           up_cmds:
-          - ifconfig eth1 up
+          - ifconfig eth2 up
           down_cmds:
-          - ifconfig eth1 down
+          - ifconfig eth2 down
         vhost0:
           enabled: true
           type: eth
