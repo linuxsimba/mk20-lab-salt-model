@@ -12,7 +12,6 @@ parameters:
         headers: true
         version: 4.4.0.42.31
         extra: true
-    system:
       repo:
         tcpcloud_opencontrail:
           source: "deb [arch=amd64] http://apt.tcpcloud.eu/nightly/ trusty oc30"
