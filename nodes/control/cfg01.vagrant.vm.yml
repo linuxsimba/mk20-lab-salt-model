@@ -70,3 +70,7 @@ parameters:
               source: git
               address: https://github.com/openstack/salt-formula-horizon.git
               branch: master
+            opencontrail:
+              source: git
+              address: https://github.com/linuxsimba/salt-formula-opencontrail.git
+              branch: master
