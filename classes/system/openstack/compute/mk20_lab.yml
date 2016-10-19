@@ -10,7 +10,7 @@ parameters:
       kernel:
         type: generic
         headers: true
-        version: 4.4.0.42.31
+        version: 4.4.0-42
         extra: true
       repo:
         tcpcloud_opencontrail:
