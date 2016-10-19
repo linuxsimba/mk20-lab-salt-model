@@ -1,9 +1,47 @@
+---
 classes:
-- service.nginx.server.single
+  - service.nginx.server.single
 parameters:
   nginx:
     server:
       logging:
         heka:
           enabled: true
-
+    site:
+      web01.vagrant.vm:
+        enabled: true
+        type: gitlab
+        name: domain
+        ssl:
+          enabled: true
+          key: |
+            -----BEGIN ENCRYPTED PRIVATE KEY-----
+            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
+            tsM=
+            -----END ENCRYPTED PRIVATE KEY-----
