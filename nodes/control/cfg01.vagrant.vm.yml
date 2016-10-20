@@ -71,3 +71,7 @@ parameters:
               source: git
               address: https://github.com/tcpcloud/salt-formula-git
               revision: master
+            openssh:
+              source: git
+              address: https://github.com/tcpcloud/salt-formula-openssh
+              revision: master
