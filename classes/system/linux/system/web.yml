@@ -12,6 +12,9 @@ parameters:
       repo:
         tcpcloud:
           source: "deb [arch=amd64] http://apt.tcpcloud.eu/nightly/ trusty main security extra tcp tcp-salt liberty"
+          architectures: amd64
+          default: true
+          key_url: "http://apt.tcpcloud.eu/public.gpg"
         ubuntu-trusty:
           source: "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates main restricted"
           architecture: amd64
