@@ -12,8 +12,12 @@ parameters:
       repo:
         tcpcloud:
           source: "deb [arch=amd64] http://apt.tcpcloud.eu/nightly/ trusty main security extra tcp tcp-salt liberty"
-          key_url: "http://apt.tcpcloud.eu/public.gpg"
-
+        ubuntu-trusty:
+          source: "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates main restricted"
+          architecture: amd64
+        ubuntu-main:
+          source: "deb http://us.archive.ubuntu.com/ubuntu/ trusty  main restricted"
+          architecture: amd64
         mirantis_main:
           source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/8.0 mos8.0 main restricted"
           architectures: amd64
