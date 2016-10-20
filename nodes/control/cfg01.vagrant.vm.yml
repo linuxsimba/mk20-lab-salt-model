@@ -1,3 +1,4 @@
+---
 classes:
   - service.git.client
   - system.linux.system.single
@@ -62,3 +63,7 @@ parameters:
               source: git
               address: https://github.com/linuxsimba/salt-formula-opencontrail.git
               branch: mos8
+            neutron:
+              source: git
+              address: https://github.com/linuxsimba/salt-formula-neutron.git
+              branch: ${_param:mirantis_version}
