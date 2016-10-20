@@ -67,3 +67,6 @@ parameters:
               source: git
               address: https://github.com/linuxsimba/salt-formula-neutron.git
               branch: ${_param:mirantis_version}
+            git:
+              source: git
+              address: https://github.com/tcpcloud/salt-formula-git
