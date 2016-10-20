@@ -70,3 +70,4 @@ parameters:
             git:
               source: git
               address: https://github.com/tcpcloud/salt-formula-git
+              revision: master
