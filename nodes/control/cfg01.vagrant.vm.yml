@@ -54,22 +54,10 @@ parameters:
               source: git
               address: https://github.com/linuxsimba/salt-formula-nova.git
               branch: ${_param:mirantis_version}
-            cinder:
-              source: git
-              address: https://github.com/linuxsimba/salt-formula-cinder.git
-              branch: ${_param:mirantis_version}
             salt:
               source: git
               address: https://github.com/linuxsimba/salt-formula-salt.git
               revision: master
-            neutron:
-              source: git
-              address: https://github.com/linuxsimba/salt-formula-neutron.git
-              branch: ${_param:mirantis_version}
-            horizon:
-              source: git
-              address: https://github.com/openstack/salt-formula-horizon.git
-              branch: master
             opencontrail:
               source: git
               address: https://github.com/linuxsimba/salt-formula-opencontrail.git
